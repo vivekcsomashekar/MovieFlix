@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"  crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>AddTitle</title>
+</head>
+<body>
+
+
+<nav class="navbar navbar-default navbar-inverse "><!--navbar-fixed-top-->
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home.html">
+
+                <img src="images/netflix.png" height="32" width="32"/></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+                <li class="dropdown">
+                    <a href="#"class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Genre</a>
+                    <ul class="dropdown-menu multi-column columns-3 dropdown-content">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <ul class="multi-column-dropdown">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Sci-Fi</a></li>
+                                    <li><a href="#">Comedy</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul class="multi-column-dropdown">
+                                    <li><a href="#">Romance</a></li>
+                                    <li><a href="#">Thriller</a></li>
+                                    <li><a href="#">Mystery</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul class="multi-column-dropdown">
+                                    <li><a href="#">Adventure</a></li>
+                                    <li><a href="#">Crime</a></li>
+                                    <li><a href="#">Sport</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-content">
+                        <li><a href="#">Year</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Series</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right">
+                <form class="navbar-form navbar-left">
+                    <button type="submit" class="btn btn-default" data-toggle="modal" data-target="#myModal">User</button>
+
+                </form>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="row">
+    <div class=" col-md-6">
+
+            <label for="title" class="col-sm-2 control-label">
+                Title</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control input-style" id="title" placeholder="Title" />
+            </div>
+
+
+            <label for="year" class="col-sm-2 control-label">
+                Year</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control input-style" id="year" placeholder="Year" />
+            </div>
+
+
+            <label for="rated" class="col-sm-2 control-label">
+                Rated</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control input-style" id="rated" placeholder="Rated" />
+            </div>
+
+
+            <label for="released" class="col-sm-2 control-label">
+                Released</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control input-style" id="released" placeholder="Released" />
+            </div>
+
+
+            <label for="genre" class="col-sm-2 control-label">
+                Genre</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control input-style" id="genre" placeholder="Genre" />
+            </div>
+
+
+
+            <label for="plot" class="col-sm-2 control-label">
+                Plot</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control input-style" id="plot" placeholder="Plot" />
+            </div>
+
+            <label for="imdbID" class="col-sm-2 control-label">
+                ImdbID</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control input-style" id="imdbID" placeholder="ImdbID" />
+            </div>
+
+            <label for="type" class="col-sm-2 control-label">
+                Type</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control input-style" id="type" placeholder="Type" />
+            </div>
+
+    </div>
+    <div class=" col-md-6">
+
+            <label for="language" class="col-sm-2 control-label">
+                Language</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control input-style" id="language" placeholder="Language" />
+            </div>
+
+            <label for="country" class="col-sm-2 control-label">
+                Country</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control input-style" id="country" placeholder="Country" />
+            </div>
+
+            <label for="awards" class="col-sm-2 control-label">
+                Awards</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control input-style" id="awards" placeholder="Awards" />
+            </div>
+
+            <label for="poster" class="col-sm-2 control-label">
+                Poster</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control input-style" id="poster" placeholder="Poster" />
+            </div>
+
+            <label for="metascore" class="col-sm-2 control-label">
+                Metascore</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control input-style" id="metascore" placeholder="Metascore" />
+            </div>
+
+            <label for="imdbRating" class="col-sm-2 control-label">
+                ImdbRating</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control input-style" id="imdbRating" placeholder="ImdbRating" />
+            </div>
+
+            <label for="imdbVotes" class="col-sm-2 control-label">
+                ImdbVotes</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control input-style" id="imdbVotes" placeholder="ImdbVotes" />
+            </div>
+
+    </div>
+    <form class="form-group">
+
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+</body>
+</html>
