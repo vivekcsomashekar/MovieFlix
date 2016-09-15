@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"  crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-inverse "><!--navbar-fixed-top-->
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home.html">
+
+                <img src="images/netflix.png" height="32" width="32"/></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="AddTitle.html">Add Title<span class="sr-only">(current)</span></a></li>
+                <li class="dropdown">
+                    <a href="#"class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Genre</a>
+                    <ul class="dropdown-menu multi-column columns-3 dropdown-content">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <ul class="multi-column-dropdown">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Sci-Fi</a></li>
+                                    <li><a href="#">Comedy</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul class="multi-column-dropdown">
+                                    <li><a href="#">Romance</a></li>
+                                    <li><a href="#">Thriller</a></li>
+                                    <li><a href="#">Mystery</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <ul class="multi-column-dropdown">
+                                    <li><a href="#">Adventure</a></li>
+                                    <li><a href="#">Crime</a></li>
+                                    <li><a href="#">Sport</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-content">
+                        <li><a href="#" >Year</a></li>
+                        <li><a href="#" >Movies</a></li>
+                        <li><a href="#" >Series</a></li>
+
+
+
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right">
+                <form class="navbar-form navbar-left">
+                    <button type="submit" class="btn btn-default" data-toggle="modal" data-target="#myModal">SignUp</button>
+
+
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-lg signup-div">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        ×</button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                        Login/Registration </h4>
+                                </div>
+                                <div class="modal-body ">
+                                    <div class="row">
+                                        <div  >
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                                <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                                            </ul>
+                                            <!-- Tab panes -->
+                                            <div class="tab-content signup-div-body">
+                                                <div class="tab-pane active" id="Login">
+                                                    <form role="form" class="form-horizontal">
+                                                        <div class="form-group">
+                                                            <div class="col-sm-2">
+                                                                <label for="email" class="control-label label-style">
+                                                                    Email</label>
+                                                            </div>
+                                                            <div class="col-sm-10">
+                                                                <input type="email" class="form-control input-style" id="email1"
+                                                                       placeholder="Email"/>
+                                                            </div>
+                                                            <div class="col-sm-2">
+                                                                <label for="exampleInputPassword1" class="control-label label-style">
+                                                                    Password</label>
+                                                            </div>
+                                                            <div class="col-sm-10">
+                                                                <input type="password" class="form-control input-style"
+                                                                       id="exampleInputPassword1" placeholder="Password" required/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-2">
+                                                            </div>
+                                                            <div class="col-sm-10 ">
+                                                                <button type="submit" class="btn btn-primary btn-sm button-padding">
+                                                                    Login</button>
+                                                                <a href="javascript:;">Forgot your password?</a>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="tab-pane" id="Registration">
+                                                    <form role="form" class="form-horizontal">
+                                                        <div class="form-group">
+                                                            <div class="col-sm-2">
+                                                                <label for="email" class="control-label label-style">
+                                                                    Name</label>
+                                                            </div>
+                                                            <div class="col-sm-10">
+
+                                                                <input type="text" class="form-control input-style" placeholder="Name"/>
+
+                                                            </div>
+
+                                                            <div class="col-sm-2">
+                                                                <label for="email" class="control-label label-style">
+                                                                    Email</label>
+                                                            </div>
+                                                            <div class="col-sm-10">
+                                                                <input type="email" class="form-control input-style" id="email"
+                                                                       placeholder="Email"/>
+                                                            </div>
+
+
+                                                            <div class="col-sm-2"><label for="password" class="control-label label-style">
+                                                                Password</label>
+                                                            </div>
+                                                            <div class="col-sm-10">
+                                                                <input type="password" class="form-control input-style" id="password" placeholder="Password" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row ">
+                                                            <div class="col-sm-2">
+                                                            </div>
+                                                            <div class="col-sm-10 ">
+                                                                <button type="button" class=" btn btn-primary btn-sm button-padding">
+                                                                    Register</button>
+                                                                <button type="button" class=" btn btn-default btn-sm button-padding">
+                                                                    Cancel</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="background-details">
+    <h4 class="text-details">Movies</h4>
+</div>
+<div class="row">
+    <div class="col-md-6">
+
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+                <select>
+                    <option>Sort By</option>
+                    <option value="volvo">Imdb Ratings</option>
+                    <option value="saab">Year</option>
+                    <option value="mercedes">Imdb Votes</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row ">
+
+
+    <div class=" col-xs-3 col-md-2 ">
+
+        <a href="details.html" class="thumbnail ">
+            <img src="http://ia.media-imdb.com/images/M/MV5BMTU4MDU3NDQ5Ml5BMl5BanBnXkFtZTgwOTU5MDUxNTE@._V1_SX300.jpg" alt="Avengers: Age of Ultron">
+
+        </a>
+
+    </div>
+
+    <div class="col-xs-3 col-md-2">
+        <a href="details.html" class="thumbnail">
+            <img src="http://ia.media-imdb.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX300.jpg" alt="The Avengers">
+        </a>
+    </div>
+    <div class="col-xs-3 col-md-2">
+        <a href="#" class="thumbnail">
+            <img src="http://ia.media-imdb.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX300.jpg" alt="The Shawshank Redemption">
+        </a>
+    </div>
+    <div class="col-xs-3 col-md-2">
+        <a href="#" class="thumbnail">
+            <img src="http://ia.media-imdb.com/images/M/MV5BNTM3OTc0MzM2OV5BMl5BanBnXkFtZTYwNzUwMTI3._V1_SX300.jpg" alt="Batman Begins">
+        </a>
+    </div>
+    <div class="col-xs-3 col-md-2">
+        <a href="#" class="thumbnail">
+            <img src="http://ia.media-imdb.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg" alt="The Dark Knight">
+        </a>
+    </div>
+    <div class="col-xs-3 col-md-2">
+        <a href="#" class="thumbnail">
+            <img src="http://ia.media-imdb.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_SX300.jpg" alt="The Dark Knight Rises">
+        </a>
+    </div>
+</div>
+
+<div class="row ">
+
+    <div class="col-xs-3 col-md-2">
+        <a href="#" class="thumbnail">
+            <img src="http://ia.media-imdb.com/images/M/MV5BMjU4NDExNDM1NF5BMl5BanBnXkFtZTgwMDIyMTgxNzE@._V1_SX300.jpg" alt="The Revenant">
+        </a>
+    </div>
+
+    <div class="col-xs-3 col-md-2">
+        <a href="#" class="thumbnail">
+            <img src="http://ia.media-imdb.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_SX300.jpg" alt="Star Wars: The Force Awakens">
+        </a>
+    </div>
+    <div class="col-xs-3 col-md-2">
+        <a href="#" class="thumbnail">
+            <img src="http://ia.media-imdb.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_SX300.jpg" alt="The Martian">
+        </a>
+    </div>
+    <div class="col-xs-3 col-md-2">
+        <a href="#" class="thumbnail">
+            <img src="http://ia.media-imdb.com/images/M/MV5BMjEyMjcyNDI4MF5BMl5BanBnXkFtZTcwMDA5Mzg3OA@@._V1_SX300.jpg" alt="The Godfather">
+        </a>
+    </div>
+    <div class="col-xs-3 col-md-2">
+        <a href="#" class="thumbnail">
+            <img src="http://ia.media-imdb.com/images/M/MV5BMTUyMTE0ODcxNF5BMl5BanBnXkFtZTgwODE4NDQzNTE@._V1_SX300.jpg" alt="Mad Max: Fury Road">
+        </a>
+    </div>
+    <div class="col-xs-3 col-md-2">
+        <a href="#" class="thumbnail">
+            <img src="http://ia.media-imdb.com/images/M/MV5BMjM2Nzg4MzkwOF5BMl5BanBnXkFtZTgwNzA0OTE3NjE@._V1_SX300.jpg" alt="Spectre">
+        </a>
+    </div>
+</div>
+<div class="pagination-div">
+    <ul class="pagination pagination-ul" >
+        <li class="pagination-li"><a href="#">1</a></li>
+        <li class="pagination-li"><a href="#">2</a></li>
+        <li class="pagination-li"><a href="#">3</a></li>
+        <li class="pagination-li"><a href="#">4</a></li>
+        <li class="pagination-li"><a href="#">5</a></li>
+    </ul>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+</body>
+</html>
